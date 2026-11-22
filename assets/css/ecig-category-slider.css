@@ -1,0 +1,33 @@
+.ecig-cat-products .swiper-wrapper {
+  padding-top: 8px !important;
+}
+
+@-webkit-keyframes ecigBlink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ecigBlink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1279px) {
+  .ecig-cat-products .ecig-cat-slide {
+    width: 151px !important;
+  }
+}
+
+@media (max-width: 599px) {
+  .ecig-card-info {
+    padding: 4px 8px 4px;
+  }
+}

@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+.ecig-tabs {
+  position: relative;
+  z-index: 5;
+}
+
+.ecig-tabs .swiper-wrapper {
+  padding-block: 0 !important;
+}
+
+.ecig-tabs .swiper-slide {
+  width: auto !important;
+  margin-right: 16px;
+}
+
+.ecig-card-info {
+  padding: 4px 12px 12px;
+}
+
+.swiper-wrapper {
+  padding: 30px 0 30px;
+}
+
+button.ecig-tab {
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #454f5b;
+  border-radius: 50px !important;
+  background: #eff1f2;
+  margin: 0 !important;
+}
+
+.ecig-tab.active {
+  background: #0f63e9;
+  color: #fff;
+}
+
+.ecig-card {
+  background: #fff;
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-box-shadow: rgba(145, 158, 171, 0.16) 0px 12px 24px -4px;
+  box-shadow: rgba(145, 158, 171, 0.16) 0px 12px 24px -4px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.ecig-card:hover {
+  -webkit-box-shadow: rgba(15, 99, 233, 0.24) 0px 8px 16px;
+  box-shadow: rgba(15, 99, 233, 0.24) 0px 8px 16px;
+}
+
+.ecig-card img {
+  aspect-ratio: 1 !important;
+  -o-object-fit: cover !important;
+  object-fit: cover !important;
+  border-radius: 0 0 12px 12px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.ecig-cat-slide {
+  height: auto !important;
+  background-size: cover;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 0;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ecig-cat-nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.ecig-dots span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  margin: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ecig-skeleton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.ecig-sk {
+  width: 200px;
+  min-width: 200px;
+}
+.ecig-sk-img {
+  height: 200px;
+  background: #eee;
+}
+.ecig-sk-info {
+  height: 60px;
+  background: #eee;
+  margin-top: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(145, 158, 171, 0.16) 0px 8px 16px;
+  box-shadow: rgba(145, 158, 171, 0.16) 0px 8px 16px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.ecig-banner-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+span.swiper-pagination-bullet {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  border: 2px solid #fff;
+  outline: 1px solid #fff;
+  width: 12px;
+  height: 12px;
+  background: #e5e8eb;
+  opacity: 1;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  outline: 1px solid #007aff;
+  background: #007aff;
+}
+
+a.ecig-title {
+  font-size: 14px;
+  font-family: "Noto Sans Thai", sans-serif;
+  text-decoration: none !important;
+  line-height: 1.5;
+  color: rgb(22, 28, 36);
+  font-weight: 400;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 44px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  margin-bottom: 4px;
+  -webkit-box-orient: vertical;
+}
+
+.ecig-price {
+  margin: 0;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1;
+}
+
+.ecig-price .amount {
+  color: rgb(22, 28, 36);
+  font-family: "Noto Sans Thai", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.ecig-product-carousel .swiper-button-disabled,
+.ecig-cat-wrap .swiper-button-disabled {
+  display: none !important;
+}
+
+.ecig-cat-products .ecig-cat-slide {
+  width: 200px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-slide-active .ecig-banner-slide {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+}
+
+@media (min-width: 1280px) {
+  .ecig-product-carousel .swiper-slide {
+    width: 200px !important;
+  }
+  .ecig-cat-products .swiper-slide:not(.ecig-cat-slide) {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ecig-cat-nav {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none !important;
+  }
+
+  /* .ecig-product-carousel .swiper-slide {
+    width: 151.58px !important;
+  }*/
+
+  /* .ecig-cat-products .swiper-slide {
+    width: 135.98px !important;
+  } */
+
+  .ecig-card-info {
+    padding: 4px 12px 12px;
+  }
+
+  .ecig-banner-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    margin-top: 0;
+  }
+
+  .ecig-sk {
+    width: 140px;
+    min-width: 140px;
+  }
+
+  .ecig-sk-img {
+    height: 140px;
+  }
+  .ecig-sk-info {
+    height: 40px;
+  }
+}
+
+/* Banner Slider */
+.ecig-banner-slide img {
+  aspect-ratio: var(--ecig-ratio, 16/9);
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 16px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 599px) {
+  .ecig-card-info {
+    padding: 4px 8px 8px;
+  }
+}
+
+@media (min-width: 600px) {
+  .ecig-banner-swiper .swiper-button-next,
+  .ecig-banner-swiper .swiper-button-prev {
+    display: flex !important;
+  }
+
+  .ecig-banner-swiper .swiper-button-next:after,
+  .ecig-banner-swiper .swiper-button-prev:after {
+    display: flex !important;
+  }
+}

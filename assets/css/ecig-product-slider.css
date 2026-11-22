@@ -1,0 +1,104 @@
+.ecig-swiper-wrapper {
+  position: relative;
+}
+
+.ecig-img-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.ecig-img-wrap img {
+  width: 100%;
+  display: block;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.ecig-img-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .ecig-img-wrap:hover .ecig-img-secondary {
+    opacity: 1;
+  }
+
+  .ecig-img-wrap:hover img:first-child {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .ecig-img-secondary {
+    display: none !important;
+  }
+
+  .ecig-prev,
+  .ecig-next {
+    display: none !important;
+  }
+}
+
+/* Skeleton */
+.ecig-skeleton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.ecig-skeleton-slide {
+  width: 200px;
+  min-width: 200px;
+  height: 260px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#eee), color-stop(#f5f5f5), to(#eee));
+  background: -o-linear-gradient(left, #eee, #f5f5f5, #eee);
+  background: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+  -webkit-animation: ecig-shimmer 1.5s infinite;
+          animation: ecig-shimmer 1.5s infinite;
+}
+
+@-webkit-keyframes ecig-shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+@keyframes ecig-shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .ecig-product-carousel .swiper-wrapper {
+    padding-left: 0px;
+  }
+
+  .swiper-wrapper {
+    padding: 16px 0 24px;
+  }
+
+  .ecig-skeleton-slide {
+    width: 140px;
+    min-width: 140px;
+    height: 180px;
+  }
+}
